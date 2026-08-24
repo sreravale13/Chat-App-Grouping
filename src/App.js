@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Window from "./Window";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://chat-app-grouping.onrender.com");
 
 const getRandomHexColor = () => {
   const r = Math.floor(Math.random() * 128).toString(16).padStart(2, '0');
