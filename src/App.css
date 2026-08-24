@@ -1,0 +1,231 @@
+.App {
+  width: 100vw;
+  height: auto;
+  background: #fff;
+  color: #212121;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  background: rgb(252, 246, 235);
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.joinContainer {
+  text-align: center;
+  width: auto;
+  height: 100vh;
+}
+
+.joinContainer h3 {
+  font-size: 2.5rem;
+}
+
+.joinContainer input {
+  width: 210px;
+  height: 40px;
+  margin: 7px;
+  border: 2px solid cornflowerblue;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.joinContainer button {
+  width: 225px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: cornflowerblue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.joinContainer button:hover {
+  background: lightblue;
+}
+
+.chat-window {
+  width: 1300px;
+  height: calc(700px - (45px + 70px))+700px;
+  border: 1px white solid;
+  padding: 10px;
+  box-shadow: 3px 4px whitesmoke;
+  background: url('../public/doodle_wallpaper.png');
+}
+
+.chat-window p {
+  margin: 0;
+  color: #263238 !important;
+
+}
+
+.chat-window .chat-header {
+  height: 45px;
+  border-radius: 6px;
+  background: #f0eded;
+  position: relative;
+  cursor: pointer;
+  position: sticky
+}
+
+.chat-window .chat-header p {
+  display: block;
+  padding: 0 1em 0 2em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.chat-window .chat-body {
+  height: calc(710px - (45px + 70px));
+  position: relative;
+}
+
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+}
+
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 120px;
+  background-color: rgb(255, 248, 220);
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#myaccount {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#myaccount .message-content {
+  background-color: lightgreen;
+}
+
+#myaccount .message-meta {
+  justify-content: flex-end;
+  margin-left: 5px;
+  text-align: center;
+  margin: 2px
+}
+
+#user {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#user .message-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(255, 248, 220);
+}
+
+#user .message-meta {
+  justify-content: flex-start;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.chat-window .chat-body .message .message-meta {
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: 40px;
+  border-top: none;
+  margin-top: 14px;
+  display: flex;
+  position: sticky;
+}
+
+.chat-window .chat-footer input {
+  height: 100%;
+  flex: 85%;
+  border: none;
+  border-radius: 2%;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.chat-window .chat-footer button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  color: #263238;
+  outline: none;
+  font-size: 25px;
+
+}
+
+.chat-window .chat-footer button:hover {
+  color: green;
+  background-color: whitesmoke
+}
+
+.hide {
+  opacity: 0 !important;
+}
+
+
+@media screen and (max-width: 810px) {
+  .App {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .chat-window {
+    width: 400px;
+    height: calc(100px - (45px + 70px))+100px;
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .chat-window {
+    width: 760px;
+    height: calc(300px - (45px + 70px))+300px;
+
+  }
+}
