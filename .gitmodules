@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/sreravale13/Chat-App-Grouping
