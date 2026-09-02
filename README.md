@@ -1,2 +1,2 @@
 Demo 
-![Demo Video](public/chat-group.gif)
+![Demo Video](public/chat-group.gif.gif)
